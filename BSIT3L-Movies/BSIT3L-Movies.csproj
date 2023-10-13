@@ -12,7 +12,4 @@
   <ItemGroup>
     <None Remove="Views\Movies\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Movies\" />
-  </ItemGroup>
 </Project>
