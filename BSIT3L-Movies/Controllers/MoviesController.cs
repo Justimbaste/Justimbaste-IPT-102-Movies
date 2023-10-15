@@ -16,5 +16,5 @@ public class MoviesController : Controller
         }; 
 
         return View(movie);
-    }
+    } 
 }
