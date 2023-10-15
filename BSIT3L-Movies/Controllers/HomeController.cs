@@ -4,7 +4,7 @@ using BSIT3L_Movies.Models;
 using System.Collections.Generic;
 
 namespace BSIT3L_Movies.Controllers;
-
+   
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
