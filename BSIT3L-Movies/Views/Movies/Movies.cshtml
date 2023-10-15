@@ -11,43 +11,45 @@
 </head>
 <body>
     <div id="shell">
-    <div id="header">
-        <div class="social">
-            <span>FOLLOW US ON:</span>
-            <ul>
-                <li><a class="twitter" href="https://twitter.com/home">twitter</a></li>
-                <li><a class="facebook" href="https://www.facebook.com/">facebook</a></li>
-            </ul>
-        </div>
-        <div id="sub-navigation">
-            <h1>MOVIE DETAILS</h1>
-        </div>
+        <div id="header">
+            <div class="social">
+                <span>FOLLOW US ON:</span>
+                <ul>
+                    <li><a class="twitter" href="https://twitter.com/home">twitter</a></li>
+                    <li><a class="facebook" href="https://www.facebook.com/">facebook</a></li>
+                </ul>
+            </div>
+            <div id="sub-navigation">
+                <h1>MOVIE DETAILS</h1>
+            </div>
             <div id="news">
                 <div class="head">
-                    <h3>NEWS</h3>
+                    <p class="text-right"><a href="@Url.Action("Index", "Home")">Back</a></p>
+                </div>
+            <div class="content">
+                    <img src="css/images/movie.1.jpeg" alt="">
+                <h4>@Model.Name</h4>
+                <p>@Model.Description</p>
+                 <a href="@Model.WikipediaLink">Read more</a>
+            </div>
+            </div>
+           @* <div id="news">
+                <div class="head">
                     <p class="text-right"><a href="@Url.Action("Index", "Home")">Back</a></p>
                 </div>
                 <div class="content">
                     <p class="date">2023</p>
-                    <h4>NOWHERE</h4>
-                    <p>&quot;Pregnant, alone and drifting in the sea, a woman trapped in a shipping container tries to survive after fleeing a devastated totalitarian country.. </p>
-                    <a href="https://en.wikipedia.org/wiki/Nowhere_(2023_film)">Read more</a>
+                    <h4>BIRD BOX</h4>
+                    <p>&quot;Bird Box is a 2018 American post-apocalyptic horror thriller film directed by Susanne Bier and written by Eric Heisserer, based on the 2014 novel of the same name by Josh Malerman. The film follows the character Malorie Hayes, played by Sandra Bullock, as she tries to protect herself and two children from entities which cause people who look at them to kill themselves... </p>
+                    <a href="https://en.wikipedia.org/wiki/Bird_Box_(film)">Read more</a>
+                    <img src="css/images/movie.6.jpeg" alt="" />
                 </div>
-                <div class="content">
-                    <h4>HEART OF STONE</h4>
-                    <p>Its plot follows an international intelligence operative who must embark on a dangerous mission to protect a mysterious artificial intelligence system known as "The Heart." She is tasked by the peacekeeping operation known as Charter to keep the object safe from falling into enemy hands...</p>
-                    <a href="https://en.wikipedia.org/wiki/Heart_of_Stone_(2023_film)">Read more</a>
-                </div>
-                <div class="content">
-                    <h4>THE POPE'S EXORCIST</h4>
-                    <p>Follow Gabriele Amorth, the Vatican's leading exorcist, as he investigates the possession of a child and uncovers a conspiracy the Vatican has tried to keep secret.. </p>
-                    <a href="https://en.wikipedia.org/wiki/The_Pope%27s_Exorcist">Read more</a>
-                </div>
-            </div>
+              
+            </div>*@
             <div id="coming">
                 <div class="head">
                     <h3><strong>COMING SOON !</strong></h3>
-                    <p class="text-right"><a href="@Url.Action("Movies", "Movies")">Back</a></p>
+                    <p class="text-right"><a href="@Url.Action("Index", "Movies")"></a></p>
                 </div>
                 <div class="content">
                     <h4>WONKA</h4>
@@ -72,10 +74,11 @@
             </div>
             <div class="cl">&nbsp;</div>
         </div>
-    <div id="footer">
-        <p class="lf">Copyright &copy; 2023 <a href="#">Justimbaste</a> - All Rights Reserved</p>
-        <div style="clear:both;"></div>
-    </div>
+        <div id="footer">
+            <p class="lf">Copyright &copy; 2023 <a href="#">Justimbaste</a> - All Rights Reserved</p>
+            <div style="clear:both;"></div>
+        </div>
     </div>
 </body>
 </html>
+

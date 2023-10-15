@@ -1,4 +1,6 @@
-﻿<head>
+﻿@model List<MovieViewModel>
+
+<head>
     <title>Home</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
@@ -23,19 +25,27 @@
                     <div class="box">
                         <div class="head">
                             <h2></h2>
-                            <p class="text-right"><a href="@Url.Action("Movies", "Movies")">Movie Details</a></p>
+                         
                         </div>
-                        <div class="movie">
-                            <div class="movie-image"><a href="https://www.youtube.com/watch?v=lT4EY1i6ZDs"> <img src="css/images/movie.1.jpg" alt=""> <span class="play"><span class="name">BIRD BOX</span></span> </a> </div>
-                            <div class="rating">
-                                <p>RATING</p>
-                                <div class="stars">
-                                    <div class="stars-in"> </div>
-                                </div>
-                                <span class="comments">10</span>
-                            </div>
-                        </div>
-                        <div class="movie">
+                       @foreach (var movie in Model)
+{
+<div class="movie">
+<div class="movie-image"><a href="@movie.Teaser"> <img src="@movie.Image" alt=""> <span class="play"><span class="name">@movie.Name</span></span> </a> </div>
+ <a href="@Url.Action("Movies", "Movies")">Movie Details</a>
+<div class="rating">
+<p>RATING: @movie.Rating</p>
+<div class="stars">
+<div class="stars-in"> </div>
+</div>
+<span class="comments">10</span>
+</div>                              
+ <div class="cl">&nbsp;</div>
+</div>
+
+
+
+}
+   @*                     <div class="movie">
                             <div class="movie-image"><a href="https://www.youtube.com/watch?v=IhXfUTGVEUI"><img src="css/images/movie.2.jpg" alt="" /> <span class="play"><span class="name">BALLERINA</span></span> </a> </div>
                             <div class="rating">
                                 <p>RATING</p>
@@ -218,7 +228,7 @@
                                 </div>
                                 <span class="comments">55</span>
                             </div>
-                        </div>
+                        </div>*@
                         <div class="cl">&nbsp;</div>
                     </div>
                 </div>
